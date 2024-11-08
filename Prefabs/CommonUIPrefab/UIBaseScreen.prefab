@@ -45,6 +45,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3227338811882441568}
   - component: {fileID: 664180566026743705}
+  - component: {fileID: 3999993484488666354}
   m_Layer: 5
   m_Name: FullScreenLayout
   m_TagString: Untagged
@@ -79,6 +80,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3039906752657947106}
   m_CullTransparentMesh: 1
+--- !u!114 &3999993484488666354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3039906752657947106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d654a8e5e0004a4cacacb3a9f5aecf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conformX: 1
+  conformY: 1
 --- !u!1 &3490610340683094571
 GameObject:
   m_ObjectHideFlags: 0

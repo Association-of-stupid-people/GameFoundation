@@ -1,4 +1,4 @@
-﻿namespace Editor.Misc
+﻿namespace EditorTool.Misc
 {
     using System;
     using System.Collections.Generic;

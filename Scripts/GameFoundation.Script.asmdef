@@ -11,7 +11,8 @@
         "UniTask",
         "GameFoundation.GameConfigs",
         "GameFoundation.SoundManager",
-        "GameFoundation.DataManager"
+        "GameFoundation.DataManager",
+        "DOTween.Modules"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

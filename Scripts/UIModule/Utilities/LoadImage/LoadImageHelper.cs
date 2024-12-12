@@ -1,4 +1,3 @@
-using DG.Tweening;
 
 namespace GameFoundation.Scripts.UIModule.Utilities.LoadImage
 {
@@ -12,6 +11,7 @@ namespace GameFoundation.Scripts.UIModule.Utilities.LoadImage
     using UnityEngine;
     using UnityEngine.Networking;
     using UnityEngine.UI;
+    using DG.Tweening;
 
     public class LoadImageHelper
     {

@@ -4,16 +4,14 @@
     using DataManager.LocalData;
     using DataManager.MasterData;
     using GameConfigs;
-    using GameFoundation.Scripts.AssetLibrary;
-    using GameFoundation.Scripts.Models;
-    using GameFoundation.Scripts.UIModule.ScreenFlow.Managers;
-    using GameFoundation.Scripts.UIModule.Utilities.GameQueueAction;
-    using GameFoundation.Scripts.UIModule.Utilities.LoadImage;
-    using GameFoundation.Scripts.Utilities;
-    using GameFoundation.Scripts.Utilities.ApplicationServices;
-    using GameFoundation.Scripts.Utilities.Extension;
-    using GameFoundation.Scripts.Utilities.LogService;
-    using GameFoundation.Scripts.Utilities.ObjectPool;
+    using AssetLibrary;
+    using Models;
+    using UIModule.ScreenFlow.Managers;
+    using Utilities;
+    using Utilities.ApplicationServices;
+    using Utilities.Extension;
+    using Utilities.LogService;
+    using Utilities.ObjectPool;
     using I2.Loc;
     using Zenject;
 
@@ -46,12 +44,9 @@
             //Genarate fps
             this.Container.Bind<Fps>().FromNewComponentOnNewGameObject().AsCached().NonLazy();
 
-            //Helper
-            this.Container.Bind<LoadImageHelper>().AsCached();
             //Installer
             ScreenFlowInstaller.Install(this.Container);
             ApplicationServiceInstaller.Install(this.Container);
-            GameQueueActionInstaller.Install(this.Container);
             this.BindSoundSetting();
         }
         

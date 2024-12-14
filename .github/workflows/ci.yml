@@ -19,6 +19,16 @@ jobs:
       uses: peter-evans/create-pull-request@v5
       with:
         token: ${{ secrets.TOKEN }}
+        commit-message: "chore: release ${{ github.ref_name }}"
+        title: "Release ${{ github.ref_name }}"
+        body: |
+          Automated PR for release ${{ github.ref_name }}
+        branch: release/${{ github.ref_name }}
+        base: master
+    - name: Release
+      uses: cycjimmy/semantic-release-action@v2
+      with:
+        token: ${{ secrets.TOKEN }}
         commit-message: "chore: release hihi"
         title: "Release hihi"
         body: |

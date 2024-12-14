@@ -43,8 +43,6 @@
 
             //Genarate fps
             this.Container.Bind<Fps>().FromNewComponentOnNewGameObject().AsCached().NonLazy();
-
-           
             //Installer
             ScreenFlowInstaller.Install(this.Container);
             ApplicationServiceInstaller.Install(this.Container);
